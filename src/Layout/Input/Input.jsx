@@ -74,11 +74,13 @@ getUsers()
     
     )
   })} 
+  <div></div>
   <div className='box'>
-      <input className='input-text second' type='text' placeholder='напр, Конференция среда' onChange={(event) => {setNewAge(event.target.value)}}/>
-        <input className='input-text first' placeholder='Описание' onChange={(event) => {setNewName(event.target.value)}}/>
+    <form action=""></form>
+      <input className='input-text second' required type='text' placeholder='напр, Конференция среда' onChange={(event) => {setNewAge(event.target.value)}}/>
+        <input className='input-text first' required placeholder='Описание' onChange={(event) => {setNewName(event.target.value)}}/>
       </div>
-          <button className='add' onClick={createUser}>Добавить задачу</button>
+          <button className='add' type='submit' onClick={createUser}>Добавить задачу</button>
       <button className='close' onClick={()=>props.setModalOpen(false)}>Отмена</button>
 
       </label>
