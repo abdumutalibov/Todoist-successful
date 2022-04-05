@@ -57,10 +57,15 @@ getUsers()
            type="button">
           Добавить задачу
       </button> */}
-      
-      <div className='text-name'> {user.age}</div>
+      <div className='c'>
+          <div className='user'>
+        <div className='text-name'> {user.age}</div>
           <div className='text-task'> {user.name}</div>
-           <button onClick={() => {deleteUser(user.id)}}>Delete User</button> 
+      </div>
+      
+           <button className='delete' onClick={() => {deleteUser(user.id)}}>Delete User</button> 
+      </div>
+    
 <hr />
       {/* <button className='close' onClick={()=>props.setModalOpen(false)}>Отмена</button> */}
 
@@ -70,8 +75,8 @@ getUsers()
     )
   })} 
   <div className='box'>
-        <input className='input-text first' placeholder='напр, Конференция среда' onChange={(event) => {setNewName(event.target.value)}}/>
-      <input className='input-text second' type='text' placeholder='Описание' onChange={(event) => {setNewAge(event.target.value)}}/>
+      <input className='input-text second' type='text' placeholder='напр, Конференция среда' onChange={(event) => {setNewAge(event.target.value)}}/>
+        <input className='input-text first' placeholder='Описание' onChange={(event) => {setNewName(event.target.value)}}/>
       </div>
           <button className='add' onClick={createUser}>Добавить задачу</button>
       <button className='close' onClick={()=>props.setModalOpen(false)}>Отмена</button>
