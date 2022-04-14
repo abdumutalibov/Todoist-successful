@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./topbar.css";
 import menu from "../../assets/images/menu.png";
 import home from "../../assets/images/home.png";

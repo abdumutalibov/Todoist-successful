@@ -1,12 +1,9 @@
 import React, { useState } from "react";
-import { AiOutlinePlus } from "react-icons/ai";
-// import {  BsSliders} from "react-icons/bs";
 import { BsSliders } from "react-icons/bs";
 import Input from "./Input/Input";
 import LineInput from "./Input/LineInput";
 import "./today.css";
 const Homepage = (props) => {
-  const [modalOpen, setModalOpen] = useState(false);
   const [lineOpen, setLineOpen] = useState(false);
 
   return (
@@ -24,6 +21,13 @@ const Homepage = (props) => {
               </div>
             </div>
             <Input/>
+            {lineOpen ? (
+              <LineInput setLineOpen={setLineOpen} />
+            ) : (
+              <div onClick={() => setLineOpen(true)} className="line">
+                Добавить раздел
+              </div>
+            )}
           </div>
         </div>
       </div>
