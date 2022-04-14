@@ -31,7 +31,7 @@ const Commit = () => {
   };
   return (
     <div>
-      {comments.length  ? (
+      {comments.length+data.length  ? (
 
 
         comments.map((res) => {
