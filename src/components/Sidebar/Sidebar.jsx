@@ -27,7 +27,7 @@ const Sidebar = () => {
               <li className="sidebarListItem li">
                 <FcPrint className="sidebarIcon" />
                 <div className="message">Входящие</div>
-                <div className="comments">{comments.length}</div>
+                <div className="comments">{comments.length+data.length}</div>
               </li>
             </NavLink>
             <NavLink

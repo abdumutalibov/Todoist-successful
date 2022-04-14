@@ -5,6 +5,7 @@ import { addTodo } from "../../redux/actions";
 import { AiOutlinePlus } from "react-icons/ai";
 import "./input.css";
 import SingleAdd from "./SingleAdd";
+import SingleComment from "../../../Layout/Input/SingleComment";
 
 const Input = (props) => {
   const [textAdd, setTextAdd] = useState("")
@@ -30,7 +31,7 @@ const Input = (props) => {
       <div>
       {data.length  ? (
                 data.map((res) => {
-          return <SingleAdd key={res.id} data={res} />;
+          return <SingleAdd key={res.id} data={res} /> 
 })
       ):( <span onClick={() => setShow(true)} className="text y">
       <AiOutlinePlus className="icon y" /> Доьбавить задачу
@@ -38,6 +39,12 @@ const Input = (props) => {
       
       )
         }
+        {/* { data.map((res=>{
+          return  <SingleComment key={res.id} data={res} />;
+        }))
+
+        } */}
+
    {show ?  (
      <form onSubmit={handleSubmit}>
       

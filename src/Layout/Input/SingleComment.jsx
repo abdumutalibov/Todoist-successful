@@ -5,6 +5,7 @@ import { commentDelete, commentUpdate } from '../../components/redux/actions';
 
   import "./singleComment.css";
   function SingleComment({ data }) {
+    
     const [commentText, setCommentText] = useState("");
     const { text, id } = data;
     const dispatch = useDispatch();
