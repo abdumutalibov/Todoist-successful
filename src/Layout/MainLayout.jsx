@@ -3,7 +3,7 @@ import "./main-layout.css";
 import { AiOutlinePlus } from "react-icons/ai";
 // import {  BsSliders} from "react-icons/bs";
 import { BsSliders } from "react-icons/bs";
-import Input from "./Input/Input";
+import Input from "./Input/Commit";
 import LineInput from "./Input/LineInput";
 
 const MainLayout = (props) => {
@@ -24,8 +24,9 @@ const MainLayout = (props) => {
                 Отображение
               </div>
             </div>
-            {modalOpen ? (
-              <Input setModalOpen={setModalOpen} />
+            <Input/> 
+            {/* {modalOpen ? (
+              setModalOpen={setModalOpen} 
             ) : (
               <span onClick={() => setModalOpen(true)} className="text y">
                 <AiOutlinePlus className="icon y" /> Доьбавить задачу
@@ -37,7 +38,7 @@ const MainLayout = (props) => {
               <div onClick={() => setLineOpen(true)} className="line">
                 Добавить раздел
               </div>
-            )}
+            )} */}
 
             {/* <svg
               className="svg"
