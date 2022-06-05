@@ -41,7 +41,7 @@ getUsers()
 
   return (
       <>
-      <label htmlFor="">
+      <label >
       {users.map((user, id) => {
       return (
 <div >
@@ -57,11 +57,15 @@ getUsers()
            type="button">
           Добавить задачу
       </button> */}
-      
-      <div className='text-name'> {user.age}</div>
+      <div className='c'>
+      <div className='user'>
+        <div className='text-name'> {user.age}</div> 
           <div className='text-task'> {user.name}</div>
-           <button onClick={() => {deleteUser(user.id)}}>Delete User</button> 
-<hr />
+          </div>
+        <button  className='delete' onClick={() => {deleteUser(user.id)}}>Удалить</button> 
+      </div>
+<hr className='hr'/>
+      
       {/* <button className='close' onClick={()=>props.setModalOpen(false)}>Отмена</button> */}
 
       </div>
