@@ -54,6 +54,7 @@ border: none;
 }
 .btn{
     margin-bottom: 30px;
+<<<<<<< HEAD:src/Layout/Input/input.css
     display: flex;
     flex-direction: column;
 }
@@ -65,10 +66,18 @@ border: none;
    flex-direction: column;
    margin-right: auto;
 
+=======
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+>>>>>>> 6f6e8c2072a5c1bbe9aaf06a18f5914d8138bc2b:src/Layout/Input/commit.css
 }
 .c{
     display: flex;
 }
+<<<<<<< HEAD:src/Layout/Input/input.css
 .delete{
     width: 90px;
 height: 30px;
@@ -79,4 +88,21 @@ border: none;
 .delete:hover{
     background-color: rgb(211, 127, 127);
     color: #fff;
+=======
+
+.delete{
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+.delete:hover{
+background-color: rgb(211, 127, 127);
+color: #fff;
+
+}
+hr{
+    opacity: 0.2;
+>>>>>>> 6f6e8c2072a5c1bbe9aaf06a18f5914d8138bc2b:src/Layout/Input/commit.css
 }

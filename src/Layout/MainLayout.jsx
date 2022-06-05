@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import "./main-layout.css";
-import { AiOutlinePlus } from "react-icons/ai";
-// import {  BsSliders} from "react-icons/bs";
 import { BsSliders } from "react-icons/bs";
-import Input from "./Input/Input";
+import Input from "./Input/Commit";
 import LineInput from "./Input/LineInput";
 
-const MainLayout = (props) => {
-  const [modalOpen, setModalOpen] = useState(false);
+const MainLayout = () => {
   const [lineOpen, setLineOpen] = useState(false);
 
   return (
@@ -24,13 +21,8 @@ const MainLayout = (props) => {
                 Отображение
               </div>
             </div>
-            {modalOpen ? (
-              <Input setModalOpen={setModalOpen} />
-            ) : (
-              <span onClick={() => setModalOpen(true)} className="text y">
-                <AiOutlinePlus className="icon y" /> Доьбавить задачу
-                </span>
-            )}
+            <Input />
+
             {lineOpen ? (
               <LineInput setLineOpen={setLineOpen} />
             ) : (
@@ -38,8 +30,10 @@ const MainLayout = (props) => {
                 Добавить раздел
               </div>
             )}
+<<<<<<< HEAD
 
             
+=======
           </div>
         </div>
       </div>

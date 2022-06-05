@@ -1,5 +1,4 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
-import todoReducer from "./todoSlice";
 import {
   persistStore,
   persistReducer,
@@ -11,9 +10,11 @@ import {
   REGISTER,
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-
+import { commentsReducer } from "./commentsReducer";
+import { todos } from "./todos";
 const rootReducer = combineReducers({
-  todos: todoReducer,
+  commentsReducer,
+  todos,
 });
 const persistConfig = {
   key: "root",
